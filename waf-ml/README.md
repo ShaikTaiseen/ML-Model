@@ -126,33 +126,7 @@ Run `python benchmark_throughput.py` to generate:
 - 🔥 Locust load test file
 - 📊 Scaling projection to 10k req/s
 
-## Integration
 
-### For Backend Team (Member 2)
-```python
-from adaptive_waf import AdaptiveWAF
-
-waf = AdaptiveWAF()
-waf.load('models/adaptive_waf.pkl')
-
-# In your request handler:
-result = waf.predict(http_request_payload)
-if result['is_malicious']:
-    return block_request()
-else:
-    return allow_request()
-```
-
-### For Dashboard Team (Member 4)
-```python
-# Your ML model provides:
-{
-    'is_malicious': bool,      # Block or allow
-    'confidence': float,       # 0.0 - 1.0
-    'anomaly_detected': bool,  # Zero-day flag
-    'latency_ms': float        # Response time
-}
-```
 
 ## Adaptive Learning Workflow
 
@@ -175,20 +149,7 @@ waf.save('models/adaptive_waf.pkl')
 - `waf_metrics.prom` - Prometheus metrics
 - `locustfile.py` - Load testing script
 
-## Production Deployment
 
-### Scaling to 10,000 req/s
-
-1. **Multi-threading**: 100 threads = 1,500 req/s
-2. **Load balancing**: 10 servers = 15,000 req/s
-3. **Caching**: 2x improvement = 30,000 req/s
-4. **GPU acceleration**: 10x improvement = 150,000 req/s
-
-### Monitoring
-
-- Use `waf_metrics.prom` with Prometheus
-- Run `locust -f locustfile.py` for load testing
-- Monitor latency histogram for performance degradation
 
 ## Key Achievements
 
@@ -201,10 +162,4 @@ waf.save('models/adaptive_waf.pkl')
 ✅ Comprehensive testing & benchmarking  
 ✅ Prometheus & Locust integration  
 
-## Next Steps
 
-1. Deploy to production environment
-2. Integrate with backend WAF engine
-3. Connect to real-time dashboard
-4. Set up continuous monitoring
-5. Implement automated retraining pipeline
