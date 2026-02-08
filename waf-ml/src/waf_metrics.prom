@@ -1,0 +1,11 @@
+# HELP waf_requests_per_second WAF throughput
+# TYPE waf_requests_per_second gauge
+waf_requests_per_second{threads="1"} 16.31
+waf_requests_per_second{threads="10"} 38.02
+waf_requests_per_second{threads="50"} 23.95
+
+# HELP waf_latency_p99_ms WAF P99 latency
+# TYPE waf_latency_p99_ms gauge
+waf_latency_p99_ms{threads="1"} 143.93
+waf_latency_p99_ms{threads="10"} 345.39
+waf_latency_p99_ms{threads="50"} 6194.07

